@@ -17,13 +17,19 @@
 
     <script src="https://cdn.staticfile.org/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script>
+
         document.addEventListener('DOMContentLoaded', () => {
             const load = document.querySelector('.load');
 
             // 在加载完成后直接触发加载界面的动画效果、播放音频文件和调用 openGenshinImpact 函数
             load.classList.add('activate');
             audio.play();
+           
         });
+        setTimeout(() => {
+                window.location.href = '../imgg.html'; // 重定向到指定页面
+                console.log("重定向了");
+            }, 3000);
     </script>
 </body>
 
